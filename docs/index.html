@@ -117,7 +117,7 @@
       <ul>
         <li><strong>Zero colectare de date personale:</strong> Aplicația NU colectează, nu stochează pe servere proprii și nu comercializează date cu caracter personal, nume, adrese de e-mail, numere de telefon sau date de geolocalizare.</li>
         <li><strong>Funcționare Local-First (On-Device):</strong> Baza de date cu istoricul extragerilor, biletele salvate în Portofel, strategiile preferate și configurările utilizatorului sunt stocate exclusiv pe memoria locală a dispozitivului dumneavoastră (în SQLite local).</li>
-        <li><strong>Licențiere (<code>TRIAL 14z..1z / 23h..1h</code>, <code>LITE</code> / Free, <code>SESIUNE PRO (1h)</code> &amp; <code>PRO Lifetime</code>) &amp; Consimțământ GDPR (UMP IAB TCF v2):</strong> În primele 14 zile de la instalare, aplicația oferă acces Trial complet fără nicio reclamă și fără ferestre de consimțământ. Începând cu ziua 15, în varianta <code>LITE</code> (echivalentul variantei Free), afișarea reclamelor neinvazive (Google AdMob, inclusiv <code>SESIUNE PRO (1h)</code> prin reclamă video cu recompensă) respectă strict standardul european GDPR / IAB TCF v2 prin Google User Messaging Platform (UMP). Achiziția opțională unică (<em>PRO Lifetime</em>) este procesată securizat prin Google Play Billing și Apple StoreKit.</li>
+        <li><strong>Licențiere (<code>LITE</code> / Free implicit, <code>TRIAL 14z..1z / 23h..1h</code> opțional, <code>SESIUNE PRO (1h)</code> &amp; <code>PRO Lifetime</code>), Consimțământ GDPR (UMP IAB TCF v2) &amp; Apple App Tracking Transparency (ATT):</strong> La instalare, aplicația pornește implicit în modul <code>LITE</code> (Free), în care afișarea reclamelor neinvazive (Google AdMob, inclusiv <code>SESIUNE PRO (1h)</code> prin reclamă video disponibilă după expirarea Trial-ului) respectă strict standardul european GDPR / IAB TCF v2 prin Google User Messaging Platform (UMP) și cadrul Apple <strong>App Tracking Transparency (ATT)</strong> pe iOS (<code>ATTrackingManager</code> este solicitat înainte de inițializarea Google Mobile Ads). În modul LITE, SDK-ul Google AdMob poate procesa identificatorul de dispozitiv (IDFA doar cu acordul explicit ATT), date despre reclame, interacțiuni cu produsul, locație aproximativă derivată din IP și date tehnice/diagnostic; dacă refuzați urmărirea în dialogul ATT pe iOS, sunt solicitate exclusiv reclame nepersonalizate. Din panoul de licențiere puteți activa o singură dată <code>TRIAL</code>-ul gratuit de 14 zile (0 reclame) sau puteți achiziționa permanent <em>PRO Lifetime</em> prin Google Play Billing și Apple StoreKit.</li>
       </ul>
     </section>
 
@@ -159,10 +159,19 @@
       <p>ChaosTheory Loto este un proiect software independent și <strong>nu este afiliat, aprobat, sponsorizat sau susținut</strong> de Compania Națională „Loteria Română” S.A. Mărcile „Loto 6/49”, „Loto 5/40”, „Joker” și „Noroc” aparțin deținătorilor lor de drept.</p>
     </section>
 
-    <section>
-      <h2>7. Ștergerea Datelor & Contact</h2>
+    <section id="support">
+      <h2>7. Ștergerea Datelor &amp; Contact / Suport</h2>
       <p>Deoarece aplicația nu necesită crearea unui cont și nu stochează date pe servere externe, puteți șterge instantaneu 100% din datele stocate local (istoric bilete, configurări sau modelul AI local descărcat) fie din meniul aplicației (Portofel / panoul Model AI Local), fie prin dezinstalarea aplicației din telefon.</p>
-      <p>Pentru orice întrebări sau asistență tehnică, ne puteți contacta prin intermediul paginii oficiale GitHub a proiectului: <a href="https://github.com/dan-stefanescu/chaostheory-loto-privacy/issues" target="_blank" rel="noopener">Suport &amp; Contact ChaosTheory Loto pe GitHub</a>.</p>
+      <p><strong>Suport Tehnic &amp; Contact Direct (fără autentificare):</strong> Trimiteți-ne un mesaj direct prin formularul de mai jos sau deschideți o sesizare pe <a href="https://github.com/dan-stefanescu/chaostheory-loto-privacy/issues" target="_blank" rel="noopener">pagina GitHub a proiectului</a>.</p>
+      <form action="https://api.web3forms.com/submit" method="POST" style="margin-top:12px;display:flex;flex-direction:column;gap:10px;">
+        <input type="hidden" name="access_key" value="1999b806-2efb-455a-a8d6-fb20744dd474">
+        <input type="hidden" name="subject" value="[Suport ChaosTheory Loto]">
+        <input type="hidden" name="from_name" value="ChaosTheory Loto Support Page">
+        <input type="text" name="name" placeholder="Nume (opțional)" style="padding:10px 12px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#f8fafc;font-size:14px;">
+        <input type="email" name="email" required placeholder="Adresa dvs. de e-mail pentru răspuns" style="padding:10px 12px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#f8fafc;font-size:14px;">
+        <textarea name="message" required rows="4" placeholder="Descrieți întrebarea sau problema întâmpinată..." style="padding:10px 12px;border-radius:8px;border:1px solid #334155;background:#0f172a;color:#f8fafc;font-size:14px;resize:vertical;"></textarea>
+        <button type="submit" style="align-self:flex-start;padding:10px 18px;border-radius:8px;border:none;background:#38bdf8;color:#0f172a;font-weight:700;font-size:14px;cursor:pointer;">Trimite mesaj de suport</button>
+      </form>
     </section>
 
     <footer>
